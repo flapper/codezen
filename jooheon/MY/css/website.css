@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+boy{
+	font-family: 'Noto Sans KR',sans-serif;
+	font-style: 14px;
+}
+.blind{
+	position: absolute;
+	left: 0;
+	top: -9999em;
+}
+.skip a{
+	position: absolute;
+	left: 0;
+	top: -9999em;
+	z-index: 9999;
+	width: 100%;
+	background-color: navy;
+	text-decoration: none;
+	text-align: center;
+	line-height: 2.5em; //폭
+}
+.skip a:focus{
+	top: 0;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+hr{
+	display: none;
+}
+#wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 1200px;
+	background-color: #000;
+}
+#header .logo{
+	float: left;
+}
+#header .logo a{
+	display: block;
+	padding: 0 20px;
+	background-color: #009688;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 50pxl
+}
+#header .logo a:hover{
+	background-color: #eee;
+	color: #000;
+}
+#header .logo a i{
+	margin-right: 10px;
+}
+#header .btn_nav{
+	outline: none;
+	float: right;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border: 0;
+	background-color: #333;
+	color: #eee;
+	font-size: 20px;
+	cursor:pointer;
+}
+#header .btn_nav:hover{
+	background-color: #ccc;
+	color: #000;
+}
+#header .lnb{
+	display: none;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+#header .lnb li a:hover{
+	background-color: #ddd;
+	color: #000;
+}
+#header .lnb li a{
+	direction: block;
+	padding-left: 20px;
+	border-bottom: 1px solid #333;
+	background-color: #222;
+	color: #eee;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+.visual{
+	position: relative;
+	 z-index: 20;
+}
+.visual .tle{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	z-index: 10;
+	padding: 0 20px;
+	background-color: #000;
+	color: #eee;
+	font-size: 2em;
+	text-transform: uppercase;
+	line-height: 65px;
+	cursor:pointer;   커서 포인터.
+}
+.visual .tle:hover{
+	background-color: #009688;
+	color: #fff;
+}
+.visual .pic{
+	position: relative;
+	z-index: 5;
+}
+.visual .pic img{
+	width: 100%;
+	-webkit-filter:sepia(0.5) grayscale(0.6);
+	-o-filter:sepia(0.5) grayscale(0.6);
+	filter:sepia(0.5) grayscale(0.6);
+}
+#container{
+	text-align: center;
+}
+#container .team{
+	padding: 80px 0 60px 0;
+	border-bottom: 1px sllid #ddd;
+}
+#container .team .tle{
+	font-size: 26px;
+	line-height: 60px;
+}
+#container .team .desc{
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+#container .human{
+
+}
+#contaner .human figure img{
+	width: 200px;
+	border-radius: 50%;
+}
+#container .human figcaption strong{
+	display: block;
+	font-size: 24px;
+	line-height: 50px;
+}
+#container .human figcaption small{
+	display: block;
+	font-size: 1.2em;
+	line-height: 30px;
+}
+#container .pricing{
+	padding: 80px 0 60px;
+	border-bottom : 1px solid #ddd;
+}
+#container .pricing .tle{
+	font-size: 26px;
+	line-height: 60px;
+}
+#container .pricing .desc{
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+#container .pricing dl{
+	margin: 0 20px 20px;
+	border: 1px solid #ccc;
+}
+#container .pricing dt strong{
+	display: block;
+	background-color: #222;
+	color: #eee;
+	font: 24px/3.4 'Verdana', sans-serif;
+}
+#container .pricing .pro dt strong{
+	background-color: #444;
+}
+#container .pricing dl li{
+	border-bottom: 1px solid #ccc;
+	font-size: 1.02em;
+	line-height: 50px;
+}
+#container .pricing dl li strong{
+	font-weight: bold;
+	color: #000;
+}
+#container .pricing dl li span{
+	display: block;
+}
+#container .pricing dl li span .pay{
+	padding: 15px 0 0;
+	font-size: 2em;
+}
+#container .pricing dl li span .pay + span{
+	color: #666;
+	font-size: .9em;
+}
+
+#container .pricing dl .sign{
+	padding: 20px 0;
+	background-color: #f0f0f0;
+}
+#container .pricing dl .sign a{
+	display: inline-block;
+	padding: 0 30px;
+	background-color: #009688;
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	line-height: 45px;
+}
+#container .pricing dl .sign a i{
+	margin-right: 10px;
+}
+#container .pricing dl .sign a:hover{
+	background-color: #ccc;
+	color: #000;
+}
+#container .contact{
+	padding: 80px 0 0;
+}
+#container .contact .tle{
+	font-size: 26px;
+	line-height: 60px;
+}
+#container .contact .desc{
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+#container .contact #map
+{
+    width: 100%;
+    height: 500px;
+}
+#footer{
+	padding: 30px 0 50px;
+	background-color: #222;
+	color: #eee;
+	text-align: center;
+}
+#footer a{
+	color: #fff;
+}
+#footer .desc{
+	margin-bottom: 15px;
+	font-size: 1.3em;
+}
+#footer dl{
+	margin-bottom: 15px;
+}
+#footer dd{
+	display: inline;
+}
+#footer dd a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #009688;
+	color: #eee;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 40px;
+}
+#footer dd a:hover{
+	background-color: #ccc;
+	color: #000;
+}

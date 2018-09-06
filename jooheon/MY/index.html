@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>learn web template</title>
+
+		<link rel="stylesheet" href="./css/normalize.css"> 
+		<link rel="stylesheet" href="./css/website.css"> 
+		<link rel="stylesheet" href="./css/all.min.css"> 
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=ture"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<dl class="skip">
+   <dt class="blind"><strong>skip navigation</strong></dt>
+   <dd><a href="#container">skip to Content</a></dd>
+</dl>
+<hr>
+<div id="wrap">
+   <!--header-->
+   <header id="header" class="clearfix">
+      <h1 class="logo"><a href=""><i class="fas fa-home"></i> Logo</a></h1>
+      <nav>
+         <h2 class="blind">Main navigation</h2>
+            <button type="button" class="btn_nav"><i class="fas fa-bars"></i> <span class="blind">Main menu</span></button>
+         <ul class="lnb">
+            <li><a href="">Team</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Price</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Search</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!--//header-->
+   <!--visual-->
+   <section class="visual">
+       <h3 class="tle">Learn w3.css</h3>
+       <p class="pic"><img src="img/pic1.jpg" alt=""></p>
+   </section>
+   <!--//visual-->
+    <!--container-->
+   <div id="container">
+      <!--team-->
+      <section class="team">
+          <h3 class="tle">OUR TEAM</h3>
+          <p class="desc">Meet the team - our office rats:</p>
+            <ul class="human">
+                <li>
+                  <figure>
+                  <img src="img/avatar1.jpg" alt="">
+                    <figcaption>
+                        <strong>블랙핑크</strong>
+                        <small>Web Designer</small>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li>
+                  <figure>
+                  <img src="img/avatar2.jpg" alt="">
+                    <figcaption>
+                        <strong>아이유</strong>
+                        <small>Web Designer</small>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li>
+                  <figure>
+                  <img src="img/avatar.jpg" alt="">
+                    <figcaption>
+                        <strong>서강준</strong>
+                        <small>Web Designer</small>
+                    </figcaption>
+                    </figure>
+                </li>
+                <li>
+                  <figure>
+                  <img src="img/avatar4.jpg" alt="">
+                    <figcaption>
+                        <strong>위너원</strong>
+                        <small>Web Designer</small>
+                    </figcaption>
+                    </figure>
+                </li>
+            </ul>
+      </section>   
+      <!--//team-->
+        <!--pricing-->
+        <section class="pricing">
+            <h3 class="tle">PRICING</h3>
+            <p class="desc">Choose a pricing plan that fits your needs.</p>
+            <dl>
+                <dt><strong>Basic</strong></dt>
+                <dd>
+                    <ul>
+                        <li><strong>10GB</strong> Storage</li>
+                        <li><strong>10</strong> Emails</li>
+                        <li><strong>10</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                        <li><span class="pay"><strong>$</strong><em>10</em></span><span>per month</span></li>
+                    </ul>
+                    <p class="sign"><a href="#"><i class="fa fa-check"></i> Sian up</a></p>
+                </dd>
+            </dl>
+            <dl class="pro">
+                <dt><strong>Pro</strong></dt>
+                <dd>
+                    <ul>
+                        <li><strong>25GB</strong> Storage</li>
+                        <li><strong>25</strong> Emails</li>
+                        <li><strong>25</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                        <li><span class="pay"><strong>$</strong><em>25</em></span><span>per month</span></li>
+                    </ul>
+                    <p class="sign"><a href="#"><i class="fa fa-check"></i> Sian up</a></p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><strong>Premium</strong></dt>
+                <dd>
+                    <ul>
+                        <li><strong>50GB</strong> Storage</li>
+                        <li><strong>50</strong> Emails</li>
+                        <li><strong>50</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                        <li><span class="pay"><strong>$</strong><em>50</em></span><span>per month</span></li>
+                    </ul>
+                    <p class="sign"><a href="#"><i class="fa fa-check"></i> Sian up</a></p>
+                </dd>
+            </dl>
+        </section>
+        <!--//pricing-->
+        <!--contact-->
+        <section class="contact">
+            <h3 class="tle">Contact Us</h3>
+            <p class="desc">Swing by for a cup of coffee, or wh</p>
+            <div id ="map"></div>
+        </section>
+        <!--//contact-->
+   </div>
+    <!--//container-->
+    <!--footer-->
+    <footer id="footer">
+        <p class="desc"><strong>Follow Us</strong></p>
+        <dl>
+            <dt class="blind"><strong>sns Link</strong></dt>
+            	<dd><a href="#"><i class="fab fa-facebook-f"></i><span class="blind">Go facebook</span></a></dd>
+           	 <dd><a href="#"><i class="fab fa-twitter"></i><span class="blind">Go twitter</span></a></dd>
+           	 <dd><a href="#"><i class="fab fa-google-plus-g"></i><span class="blind">Go google plus</span></a></dd>
+            	<dd><a href="#"><i class="fab fa-instagram"></i><span  class="blind">Go instagram</span></a></dd>
+        </dl>
+        <p class="copy">Powered by <a href="#">w3.css</a></p>
+    </footer>
+    <!--//footer-->
+</div>
+</body>
+</html>
