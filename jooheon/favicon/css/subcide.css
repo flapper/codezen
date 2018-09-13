@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* Common */
+html,body{width:100%;height:100%}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'Trebuchet MS',AppleGothic,sans-serif;font-size:12px}
+img,fieldset{border:0}
+img{vertical-align:top}/*공백이 없어진다.*/
+ul,ol{list-style:none}
+em,address{font-style:normal}
+.blind,legend{display:block;position:absolute;left:0;top:-9999em;overflow:hidden}
+table{border-collapse:collapse}
+caption{position:absolute;left:0;top:-9999em;overflow:hidden;height:0;width:0;font-size:0;line-height:0}
+hr{display:none}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+.skip a{display:block;position:absolute;left:0;top:-9999em;z-index:9999;width:100%;background-color:navy;color:#eee;font:bold 16px/1.8 verdana,sans-serif;text-align:center}
+.skip a:focus{top:0} 
+
+/* Style */
+#wrap {
+    width: 760px;
+    margin: 0 auto;
+}
+#header {
+   position: relative;
+   padding-bottom: 150px;
+   background: no-repeat 0 100%;
+}
+.about #header {
+   background-image: url(../img/visual_about.jpg);   
+}
+.services #header {
+   background-image: url(../img/visual_services.jpg);   
+}
+.portfolio #header {
+   background-image: url(../img/visual_portfolio.jpg);   
+}
+.contact #header {
+   background-image: url(../img/visual_contact.jpg);   
+}
+
+#header .logo {
+    position: absolute;
+    right: 30px;
+    top: 106px;
+}
+#header .lnb {
+    padding-left: 11px;
+    *zoom: 1;
+}
+#header .lnb:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#header .lnb li {
+    float: left;
+}
+#header .lnb li a {
+    display: block;
+    height: 50px;
+    background: no-repeat 0 0;
+     text-indent: -9999em;
+}
+#header .lnb li a:hover {
+    background-position: 0 -50px;
+}
+
+#header .lnb li a.on,
+#header .lnb li a.on:hover {
+    background-position: 0 -100px;
+}
+
+#header .lnb li.mm1 a{
+   width: 71px;
+   background-image: url(../img/m_about.gif);
+}
+#header .lnb li.mm2 a{
+   width: 91px;
+   background-image: url(../img/m_services.gif);
+}
+#header .lnb li.mm3 a{
+   width: 95px;
+   background-image: url(../img/m_portfolio.gif);
+   margin-left: -7px;
+}
+#header .lnb li.mm4 a{
+   width: 106px;
+   background-image: url(../img/m_contact.gif);
+}
+
+#container{
+    color: #666;
+    line-height: 1.4;
+    *zoom: 1;
+}
+#container:after{
+   content: '';
+    display: block;
+    clear: both;
+}
+#container #contents{float:left; width:480px;}
+#container #contents .inn{padding: 25px 25px 30px 25px;}
+
+#container #contents h2, 
+#container #contents p, 
+#container #contents address{
+   padding-bottom: 10px;
+} 
+#container #contents address p{
+   padding-bottom: 0px;
+}
+#container #contents a{
+   text-decoration: underline;
+}
+
+#container .aside{
+   float:right;
+   width: 280px;
+}
+
+#container .aside .inn{
+   padding: 25px 25px 30px 0px;
+}
+
+#footer{ 
+	border-top:1px solid #ddd;
+	padding:25px 25px 35px; 
+	color:#999; 
+}
+#footer:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#footer a{ 
+	color: #aaa; 
+}
+#footer a:hover{
+	color: #aa4b00;
+}
+#footer .btm_menu{
+   float:right;
+   line-height: 1.8;
+}
+#footer .copy{  
+	float:left;line-height: 1.8;
+}
+#footer .btm_menu dd{
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+
